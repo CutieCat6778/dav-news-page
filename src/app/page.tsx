@@ -5,13 +5,13 @@ import Weather from "@/components/weather"
 export default function Home() {
   return (
     <div className="w-full min-h-screen items-center flex flex-col">
-      <div className="absolute flex items-center">
-        <Image src={"/logo.png"} alt="DAV NEWS LOGO" objectFit="cover" width={400} height={400} className="w-[8vw] h-[4vw] object-bottom object-cover"/>
+      <div className="absolute flex items-center max-height-[100px]">
+        <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
         <h1 className="text-4xl font-bold text-blue-900">DAVInternational</h1>
       </div>
       <nav className="w-full flex items-center px-10">
         <div className="mr-4 flex items-center">
-          <Image src={"/logo.png"} alt="DAV NEWS LOGO" objectFit="cover" width={400} height={400} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
+        <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
           <h1 className="text-2xl font-extrabold text-blue-900">DAVNEWS</h1>
         </div>
         <div className="flex items-center">

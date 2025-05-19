@@ -23,7 +23,7 @@ export default function Weather() {
 		return (
 			<div className="flex items-center">
 				<Image src={getWeatherIcon(data.code)} alt="Weather icon" height={64} width={64}/>
-				<h1>{data.temperature} *C</h1>
+				<h1>{data.temperature}°C</h1>
 			</div>
 		)
 	} else {
