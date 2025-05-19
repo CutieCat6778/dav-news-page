@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="flex items-center">
           <div className="border-r-2 pr-4 mr-4">
-            <h1 className="text-neutral-700 font-extrabold">Ha Noi</h1>
+            <h1 className="text-neutral-700 font-extrabold">Hà Nội</h1>
             <h2 className="text-neutral-500">{formatDate(new Date())}</h2>
           </div>
           <Weather/>
