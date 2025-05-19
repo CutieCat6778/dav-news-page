@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { formatDate } from "@/utils/date"
 import Weather from "@/components/weather" 
+import "./globals.css"
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           <h1 className="font-semibold text-xl">Đăng nhập</h1>
         </div>
       </nav>
-      <nav className="w-[90%] px-8 flex items-center justify-around pb-2">
+      <nav className="w-[90%] px-8 flex items-center justify-around pb-2 mt-2">
         <h3>
           Chính Trị 
         </h3>
@@ -82,37 +83,37 @@ Kinh Tế
         </h3>
       </nav>
       <div className="w-[90%] h-[2px] bg-black"/>
-      <main className="px-14 p-6 w-full grid grid-cols-4 grid-rows-3">
-        <div className="max-w-[14vw]">
+      <main className="pt-10 w-[80%] grid grid-cols-5 grid-rows-3">
+        <div className="pr-4 mr-4 border-r-2 border-neutral-50 border-b-2">
           <Image src="/tien_2.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
           <h2 className="mt-2">Hoa hậu Nguyễn Thúc Thuỳ Tiên bị khỏi tố</h2>
         </div>
-        <div className="w-[90%] col-span-2 row-span-3">
-          <Image src="/teacher.jpg" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] bg-neutral-700 object-cover"/>
+        <div className="w-[100%] col-span-2 row-span-3">
+          <Image src="/teacher.jpg" alt="Teacher Image" height={600} width={800} className="w-[100%] bg-neutral-700 object-cover"/>
           <h2 className="mt-4 font-bold text-2xl">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h2>
           <p className="text-neutral-500 mt-4">
             Trò chuyện với thầy Thanh Phong - giảng viên Học Viện Ngoại Giao. Thầy đã chia sẻ quan điểm về tầm quan trọng của việc giữ "hai chữ cân bằng" trong hành trình truởng thành của người trẻ.
           </p>
         </div>
-        <div className="max-w-[24vw] flex flex-row-reverse">
+        <div className="ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 border-b-2">
           <Image src="/tien_1.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 max-w-[10vw] mr-[2vw]">Hoa hậu Thuỳ Tiên "lách" trách nhiệm vụ kẹo Kẻa như thế nào?</h2>
+          <h2 className="mt-2 mr-4 max-w-1/2">Hoa hậu Thuỳ Tiên "lách" trách nhiệm vụ kẹo Kera như thế nào?</h2>
         </div>
-        <div className="max-w-[14vw]">
+        <div className="pr-4 mr-4 border-r-2 border-neutral-50 border-b-2 pt-4">
           <Image src="/trump.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
           <h2 className="mt-2">Ông Trump có thể bổ sung lệnh trừng phạt với Nga</h2>
         </div>
-        <div className="max-w-[24vw] flex flex-row-reverse">
+        <div className="ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 border-b-2 pt-4">
           <Image src="/da-nang.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 max-w-[10vw] mr-[2vw]">Nghiên cứu chuyển hơn 1.000 dân về Đà Nẵng hoặc Quảng Ngãi sau sát nhập</h2>
+          <h2 className="mt-2 mr-4 max-w-1/2">Nghiên cứu chuyển hơn 1.000 dân về Đà Nẵng hoặc Quảng Ngãi sau sát nhập</h2>
         </div>
-        <div className="max-w-[14vw]">
+        <div className="pr-4 mr-4 border-r-2 border-neutral-50 max-h-[200px] pt-4">
           <h2 className="my-1 text-2xl font-bold">Tâm Điểm</h2>
           <h2 className="mt-2">Tuyển sinh lớp 1, 6 "nhà gần truờng": Nhiều lợi ích nhưng cần minh bạch</h2>
         </div>
-        <div className="max-w-[24vw] flex flex-row-reverse">
+        <div className="ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 pt-4 h-[270px]">
           <Image src="/russia.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 max-w-[10vw] mr-[2vw]">Chuyên Gia: Tên lửa Iskander-1000 của Nga hiếm khi bắn truợt</h2>
+          <h2 className="mt-2 mr-4 max-w-1/2">Chuyên Gia: Tên lửa Iskander-1000 của Nga hiếm khi bắn truợt</h2>
         </div>
       </main>
     </div>
