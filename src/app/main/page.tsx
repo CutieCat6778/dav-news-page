@@ -5,7 +5,7 @@ import "../globals.css"
 
 export default function Home() {
   return (
-    <div className="w-full h-screen overflow-clip items-center flex flex-col">
+    <div className="w-full min-h-screen items-center flex flex-col">
       <a href="/" className="absolute flex items-center max-height-[100px]">
         <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
         <h1 className="text-4xl font-bold text-blue-900">DAVInternational</h1>
@@ -84,12 +84,48 @@ export default function Home() {
       </nav>
       <div className="w-[90%] h-[2px] bg-black"/>
       <main className="pt-8 w-[60%] h-[70%] flex justify-start flex-col items-center ">
+        <h1 className="text-4xl font-bold">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h1>
+        <div className="w-full flex items-center my-4">
+          <div className="flex items-center mr-10">
+            <div className="w-10 h-10 rounded-full bg-blue-900 mr-4"/>
+            <h2>Nhom 4</h2>
+          </div>
+          <h2 className="text-neutral-500">{formatDate(new Date())}</h2>
+        </div>
+        <audio className="w-[80%] rounded-[12px] bg-neutral-400 my-4" controls>
+          <source src="/audio.mp3" type="audio/mpeg"/>
+        </audio>
+        <p className="mt-5 italic">
+            (DAVNEWS) - Năng động, chăm chỉ, đa nhiệm - sinh viên ngày nay đang hiện lên như một thế hệ "toàn năng" giữa kỷ nguyên tốc độ. Nhưng phía sau những chiếc CV dày dặn, lịch trình dày đặc và hình ảnh luôn bận rộn ấy là một mặt tối ít được nhắc đến: sức khỏe thể chất và tinh thần đang bị bào mòn từng ngày. 
+        </p>
+        <h2 className="font-bold text-xl w-full text-left py-4">Cuộc đua không vạch đích: Sinh viên và vòng xoáy “đa nhiệm”</h2>
+        <p>
+          “Vừa học vừa làm”, “thức xuyên đêm”, “chạy deadline” đang trở thành những từ khóa quen thuộc phản ánh thực tế cuộc sống của hầu hết sinh viên hiện nay. Không khó để bắt gặp hình ảnh sinh viên gục đầu bên laptop, ăn vội bát mì trong thư viện, hay thức trắng đêm tại các quán cà phê mở 24h. Một bộ phận lớn sinh viên đang lựa chọn đánh đổi bữa ăn, giấc ngủ và thậm chí sức khỏe để theo kịp tiến độ học tập, hoạt động ngoại khóa và công việc làm thêm. “Chạy deadline xuyên đêm là chuyện bình thường,” một sinh viên ngành Truyền thông chia sẻ.
+          <br/>
+          <br/>
+          Tình trạng đảo lộn giờ giấc, thiếu ngủ kéo dài và ăn uống thất thường không còn là hiện tượng cá biệt, mà đã trở thành một “lối sống” phổ biến. Trong bối cảnh cạnh tranh ngày càng gay gắt, nhiều sinh viên cảm thấy bắt buộc phải luôn bận rộn, phải “đa nhiệm” để không bị bỏ lại phía sau. Cường độ học tập cao, lịch trình dày đặc cùng kỳ vọng thành tích khiến không ít người trẻ rơi vào trạng thái mệt mỏi triền miên, cả về thể chất lẫn tinh thần.
+          <br/>
+          <br/>
+          Đáng chú ý, lối sống này đang được ngầm xem là “tiêu chuẩn” của sự thành công - nơi mà năng động và kiệt sức chỉ cách nhau một ranh giới mỏng. Và câu hỏi đặt ra là: Liệu đây là sự chủ động thích nghi hay là dấu hiệu của một thế hệ đang bị cuốn theo áp lực vô hình?
+        </p>
+        <h2 className="font-bold text-xl w-full text-left py-4">
+        Khi áp lực không chỉ đến từ bài vở mà còn từ những ánh nhìn kỳ vọng
+        </h2>
+        <p className="mb-4">
+          Tình trạng sinh viên bỏ bữa, thiếu ngủ vì mải "chạy deadline", dẫn đến sức khỏe thể chất và tinh thần bị ảnh hưởng nghiêm trọng, đã không còn là điều xa lạ trong đời sống hiện nay. Thực tế này bắt nguồn từ nhiều nguyên nhân phức tạp, đan xen lẫn nhau.
+          <br/>
+          <br/>
+          Một trong những yếu tố hàng đầu buộc sinh viên “chạy deadline" chính là khối lượng kiến thức và yêu cầu môn học ngày càng lớn. Chương trình đào tạo hiện đại thường được thiết kế với nhiều môn học, đòi hỏi sinh viên phải nắm vững kiến thức và kỹ năng thực hành. Các hình thức bài tập như tiểu luận, báo cáo, thuyết trình nhóm,... và các kỳ thi dồn dập khiến sinh viên luôn trong tình trạng căng thẳng. Để đảm bảo hoàn thành tất cả các bài tập đúng hạn và đạt kết quả tốt, việc dành phần lớn thời gian cho học tập, thậm chí thức khuya hay bỏ bữa để học bài đã trở thành điều không thể tránh khỏi đối với nhiều sinh viên.
+        </p>
         <Image src="/main.jpg" alt="main" height="600" width="800" className="aspect-video object-cover"/>
         <span className="text-sm mt-2 text-neutral-400 font-semibold">Sinh viên mải “chạy deadline” làm ảnh hưởng sức khoẻ</span>
         <span className="text-sm mt-2 text-neutral-400 font-semibold">( Nguồn: The Ohio State University )</span>
-        <p className="text-lg mt-6">
+        <p className="text-lg my-6">
           Bên cạnh áp lực từ chương trình học, kỳ vọng từ gia đình và xã hội cũng tạo nên gánh nặng tâm lý không nhỏ. Nhiều bạn trẻ phải đối mặt với áp lực phải đạt thành tích cao, có việc làm tốt sau khi ra trường, thậm chí là mang lại niềm tự hào cho gia đình. Chính những kỳ vọng này, dù xuất phát từ tình yêu thương, lại vô tình đẩy sinh viên vào áp lực phải hoàn hảo. Bạn L.T.D, sinh viên Học viện Ngoại giao chia sẻ: "Áp lực học tập ở trường đã lớn, nhưng mình còn cảm thấy áp lực từ gia đình và bạn bè nữa. Ai cũng mong mình đạt được kết quả tốt, có công việc ổn định sau này. Điều đó khiến mình không dám lơ là bất cứ lúc nào."
         </p>
+        <iframe width="1200" height="800"
+          src="https://www.youtube.com/embed/t0Q2otsqC4I">
+        </iframe>
       </main>
     </div>
   );
