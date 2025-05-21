@@ -87,8 +87,8 @@ export default function Home() {
         <h1 className="text-4xl font-bold">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h1>
         <div className="w-full flex items-center my-4">
           <div className="flex items-center mr-10">
-            <div className="w-10 h-10 rounded-full bg-blue-900 mr-4"/>
-            <h2>Nhom 4</h2>
+            <Image alt="Nhom 4" height={128} width={128} src="/nhom_4.jpg" className="w-10 h-10 rounded-full bg-blue-900 mr-4"/>
+            <h2>Nhóm 4</h2>
           </div>
           <h2 className="text-neutral-500">{formatDate(new Date())}</h2>
         </div>
@@ -166,7 +166,7 @@ export default function Home() {
           <br/>
           Lựa chọn sống “đa nhiệm” không sai, nhưng khi nó cuốn sinh viên vào một cuộc đua không có điểm dừng, thì mệt mỏi và kiệt sức là điều tất yếu. Việc học cách lùi lại, thiết lập giới hạn và chăm sóc sức khỏe tinh thần không chỉ là lựa chọn cá nhân, mà là cách để thế hệ trẻ duy trì nội lực bền vững trên hành trình trưởng thành.
         </p>
-        <iframe width="1000" height="632"
+        <iframe width="1000" height="632" className="mb-10"
           src="https://www.youtube.com/embed/aZSrO6llVJw">
         </iframe>
       </main>
