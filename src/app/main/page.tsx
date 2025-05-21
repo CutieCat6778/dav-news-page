@@ -1,20 +1,20 @@
 import Image from "next/image";
 import { formatDate } from "@/utils/date"
 import Weather from "@/components/weather" 
-import "./globals.css"
+import "../globals.css"
 
 export default function Home() {
   return (
     <div className="w-full h-screen overflow-clip items-center flex flex-col">
-      <div className="absolute flex items-center max-height-[100px]">
+      <a href="/" className="absolute flex items-center max-height-[100px]">
         <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
         <h1 className="text-4xl font-bold text-blue-900">DAVInternational</h1>
-      </div>
+      </a>
       <nav className="w-full flex items-center px-10">
-        <div className="mr-4 flex items-center">
-        <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
+        <a href="/" className="mr-4 flex items-center">
+          <Image src={"/logo.jpg"} alt="DAV NEWS LOGO" objectFit="cover" width={200} height={200} className="w-[4vw] h-[4vw] object-bottom object-cover"/>
           <h1 className="text-2xl font-extrabold text-blue-900">DAVNEWS</h1>
-        </div>
+        </a>
         <div className="flex items-center">
           <div className="border-r-2 pr-4 mr-4">
             <h1 className="text-neutral-700 font-extrabold">Hà Nội</h1>
@@ -83,38 +83,13 @@ export default function Home() {
         </h3>
       </nav>
       <div className="w-[90%] h-[2px] bg-black"/>
-      <main className="pt-8 w-[90%] h-[70%] grid grid-cols-6 grid-rows-3">
-        <div className="pr-4 mr-4 border-r-2 border-neutral-50 border-b-2">
-          <Image src="/tien_2.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2">Hoa hậu Nguyễn Thúc Thuỳ Tiên bị khỏi tố</h2>
-        </div>
-        <a href="/main" className="w-[100%] h-[63.2%] col-span-3 row-span-3">
-          <Image src="/teacher.jpg" alt="Teacher Image" height={632} width={1000} className="w-[100%] bg-neutral-700 object-cover aspect-video"/>
-          <h2 className="mt-4 font-bold text-2xl">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h2>
-          <p className="text-neutral-500 mt-4">
-            Trò chuyện với thầy Thanh Phong - giảng viên Học Viện Ngoại Giao. Thầy đã chia sẻ quan điểm về tầm quan trọng của việc giữ "hai chữ cân bằng" trong hành trình truởng thành của người trẻ.
-          </p>
-        </a>
-        <div className="pt-2 ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 border-b-2">
-          <Image src="/tien_1.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 mr-4 max-w-1/2">Hoa hậu Thuỳ Tiên "lách" trách nhiệm vụ kẹo Kera như thế nào?</h2>
-        </div>
-        <div className="pr-4 mr-4 border-r-2 border-neutral-50 border-b-2 pt-4 pb-4">
-          <Image src="/trump.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 text-[1rem]">Ông Trump có thể bổ sung lệnh trừng phạt với Nga</h2>
-        </div>
-        <div className="ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 border-b-2 pt-4">
-          <Image src="/da-nang.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 mr-4 max-w-1/2">Nghiên cứu chuyển hơn 1.000 dân về Đà Nẵng hoặc Quảng Ngãi sau sát nhập</h2>
-        </div>
-        <div className="pr-4 mr-4 border-r-2 border-neutral-50 max-h-[200px] pt-6">
-          <h2 className="my-1 text-2xl font-bold">Tâm Điểm</h2>
-          <h2 className="mt-2">Tuyển sinh lớp 1, 6 "nhà gần truờng": Nhiều lợi ích nhưng cần minh bạch</h2>
-        </div>
-        <div className="ml-4 flex flex-row-reverse col-span-2 border-l-2 border-neutral-50 pl-4 pt-4 h-[270px]">
-          <Image src="/russia.webp" alt="Teacher Image" height={600} width={800} className="w-[100%] h-[70%] aspect-auto object-cover bg-neutral-700"/>
-          <h2 className="mt-2 mr-4 max-w-1/2">Chuyên Gia: Tên lửa Iskander-1000 của Nga hiếm khi bắn truợt</h2>
-        </div>
+      <main className="pt-8 w-[60%] h-[70%] flex justify-start flex-col items-center ">
+        <Image src="/main.jpg" alt="main" height="600" width="800" className="aspect-video object-cover"/>
+        <span className="text-sm mt-2 text-neutral-400 font-semibold">Sinh viên mải “chạy deadline” làm ảnh hưởng sức khoẻ</span>
+        <span className="text-sm mt-2 text-neutral-400 font-semibold">( Nguồn: The Ohio State University )</span>
+        <p className="text-lg mt-6">
+          Bên cạnh áp lực từ chương trình học, kỳ vọng từ gia đình và xã hội cũng tạo nên gánh nặng tâm lý không nhỏ. Nhiều bạn trẻ phải đối mặt với áp lực phải đạt thành tích cao, có việc làm tốt sau khi ra trường, thậm chí là mang lại niềm tự hào cho gia đình. Chính những kỳ vọng này, dù xuất phát từ tình yêu thương, lại vô tình đẩy sinh viên vào áp lực phải hoàn hảo. Bạn L.T.D, sinh viên Học viện Ngoại giao chia sẻ: "Áp lực học tập ở trường đã lớn, nhưng mình còn cảm thấy áp lực từ gia đình và bạn bè nữa. Ai cũng mong mình đạt được kết quả tốt, có công việc ổn định sau này. Điều đó khiến mình không dám lơ là bất cứ lúc nào."
+        </p>
       </main>
     </div>
   );
