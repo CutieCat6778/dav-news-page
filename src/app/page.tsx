@@ -89,8 +89,8 @@ export default function Home() {
           <h2 className="mt-2">Hoa hậu Nguyễn Thúc Thuỳ Tiên bị khỏi tố</h2>
         </div>
         <a href="/main" className="w-[100%] h-[63.2%] col-span-3 row-span-3">
-          <Image src="/teacher.jpg" alt="Teacher Image" height={632} width={1000} className="w-[100%] bg-neutral-700 object-cover aspect-video"/>
-          <h2 className="mt-4 font-bold text-2xl">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h2>
+          <Image src="/main.jpg" alt="Teacher Image" height={632} width={1000} className="w-[100%] bg-neutral-700 object-cover aspect-video"/>
+          <h2 className="mt-4 font-bold text-2xl">“Sinh viên toàn năng” – mặt tối sau ánh hào quang"</h2>
           <p className="text-neutral-500 mt-4">
             Trò chuyện với thầy Thanh Phong - giảng viên Học Viện Ngoại Giao. Thầy đã chia sẻ quan điểm về tầm quan trọng của việc giữ "hai chữ cân bằng" trong hành trình truởng thành của người trẻ.
           </p>

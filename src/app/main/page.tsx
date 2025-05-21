@@ -84,11 +84,11 @@ export default function Home() {
       </nav>
       <div className="w-[90%] h-[2px] bg-black"/>
       <main className="pt-8 w-[60%] h-[70%] flex justify-start flex-col items-center ">
-        <h1 className="text-4xl font-bold">Thầy Thanh Phong: "Sinh viên thành công là người biết giữ đưọc hai chữ cân bằng"</h1>
+        <h1 className="text-4xl font-bold">“Sinh viên toàn năng” – mặt tối sau ánh hào quang</h1>
         <div className="w-full flex items-center my-4">
           <div className="flex items-center mr-10">
             <Image alt="Nhom 4" height={128} width={128} src="/nhom_4.jpg" className="w-10 h-10 rounded-full bg-blue-900 mr-4"/>
-            <h2>Nhóm 4</h2>
+            <h2 className="font-bold">Nhóm 4</h2>
           </div>
           <h2 className="text-neutral-500">{formatDate(new Date())}</h2>
         </div>
@@ -98,6 +98,9 @@ export default function Home() {
         <p className="mt-5 italic">
             (DAVNEWS) - Năng động, chăm chỉ, đa nhiệm - sinh viên ngày nay đang hiện lên như một thế hệ "toàn năng" giữa kỷ nguyên tốc độ. Nhưng phía sau những chiếc CV dày dặn, lịch trình dày đặc và hình ảnh luôn bận rộn ấy là một mặt tối ít được nhắc đến: sức khỏe thể chất và tinh thần đang bị bào mòn từng ngày. 
         </p>
+        <iframe width="1000" height="632" className="my-10"
+          src="https://www.youtube.com/embed/aZSrO6llVJw">
+        </iframe>
         <h2 className="font-bold text-xl w-full text-left py-4">Cuộc đua không vạch đích: Sinh viên và vòng xoáy “đa nhiệm”</h2>
         <p>
           “Vừa học vừa làm”, “thức xuyên đêm”, “chạy deadline” đang trở thành những từ khóa quen thuộc phản ánh thực tế cuộc sống của hầu hết sinh viên hiện nay. Không khó để bắt gặp hình ảnh sinh viên gục đầu bên laptop, ăn vội bát mì trong thư viện, hay thức trắng đêm tại các quán cà phê mở 24h. Một bộ phận lớn sinh viên đang lựa chọn đánh đổi bữa ăn, giấc ngủ và thậm chí sức khỏe để theo kịp tiến độ học tập, hoạt động ngoại khóa và công việc làm thêm. “Chạy deadline xuyên đêm là chuyện bình thường,” một sinh viên ngành Truyền thông chia sẻ.
@@ -118,14 +121,12 @@ export default function Home() {
           Một trong những yếu tố hàng đầu buộc sinh viên “chạy deadline" chính là khối lượng kiến thức và yêu cầu môn học ngày càng lớn. Chương trình đào tạo hiện đại thường được thiết kế với nhiều môn học, đòi hỏi sinh viên phải nắm vững kiến thức và kỹ năng thực hành. Các hình thức bài tập như tiểu luận, báo cáo, thuyết trình nhóm,... và các kỳ thi dồn dập khiến sinh viên luôn trong tình trạng căng thẳng. Để đảm bảo hoàn thành tất cả các bài tập đúng hạn và đạt kết quả tốt, việc dành phần lớn thời gian cho học tập, thậm chí thức khuya hay bỏ bữa để học bài đã trở thành điều không thể tránh khỏi đối với nhiều sinh viên.
         </p>
         <Image src="/main.jpg" alt="main" height="600" width="800" className="aspect-video object-cover"/>
-        <span className="text-sm mt-2 text-neutral-400 font-semibold">Hình ảnh sinh viên miệt mài “chạy deadline”</span>
-        <span className="text-sm mt-2 text-neutral-400 font-semibold">( Nguồn: Quỳnh Anh )</span>
+        <span className="text-sm mt-2 text-neutral-600 italic">Hình ảnh sinh viên miệt mài “chạy deadline” ( Nguồn: Quỳnh Anh )</span>
         <p className="text-lg my-6">
           Bên cạnh áp lực từ chương trình học, kỳ vọng từ gia đình và xã hội cũng tạo nên gánh nặng tâm lý không nhỏ. Nhiều bạn trẻ phải đối mặt với áp lực phải đạt thành tích cao, có việc làm tốt sau khi ra trường, thậm chí là mang lại niềm tự hào cho gia đình. Chính những kỳ vọng này, dù xuất phát từ tình yêu thương, lại vô tình đẩy sinh viên vào áp lực phải hoàn hảo. Bạn L.T.D, sinh viên Học viện Ngoại giao chia sẻ: "Áp lực học tập ở trường đã lớn, nhưng mình còn cảm thấy áp lực từ gia đình và bạn bè nữa. Ai cũng mong mình đạt được kết quả tốt, có công việc ổn định sau này. Điều đó khiến mình không dám lơ là bất cứ lúc nào."
         </p>
         <Image src="/pic2.webp" alt="main" height="600" width="800" className="aspect-video object-cover"/>
-        <span className="text-sm mt-2 text-neutral-400 font-semibold">Sinh viên đang chịu áp lực ngày càng lớn từ bạn bè, người thân</span>
-        <span className="text-sm mt-2 text-neutral-400 font-semibold">( Nguồn: ybox.vn )</span>
+        <span className="text-sm mt-2 text-neutral-600 italic">Sinh viên đang chịu áp lực ngày càng lớn từ bạn bè, người thân ( Nguồn: ybox.vn )</span>
         <p className="mt-4">
           Một nguyên nhân cốt lõi khác dẫn đến tình trạng này là kỹ năng quản lý thời gian và tự chăm sóc bản thân của sinh viên còn hạn chế. Đặc biệt là những sinh viên mới xa nhà, chưa có kinh nghiệm sắp xếp lịch trình cá nhân một cách hợp lý, khoa học. Thay vì phân bổ công việc đều đặn, nhiều bạn thường xuyên rơi vào tình trạng "nước đến chân mới nhảy", dẫn đến việc phải "chạy deadline" cấp tốc vào những phút cuối. Việc này kéo theo chuỗi ngày bỏ bữa, thiếu ngủ triền miên, tạo thành thói quen khó bỏ và ảnh hưởng trực tiếp đến sức khỏe.
         </p>
@@ -136,8 +137,8 @@ export default function Home() {
           Không chỉ là những đêm mất ngủ hay bữa ăn vội vã, vòng xoáy “đa nhiệm” đang để lại những hệ luỵ sâu sắc và lâu dài đối với sức khỏe thể chất và tinh thần của sinh viên. Theo một nghiên cứu của Đại học Huế, tỷ lệ sinh viên có các dấu hiệu của căng thẳng, lo âu và trầm cảm tương ứng là 51,84%; 81,55% và 57,09%. Trong đó, tỷ lệ sinh viên có dấu hiệu từ nặng đến rất nặng đối với rối loạn căng thẳng là 7,96%; rối loạn lo âu là 35,92% và trầm cảm là 8,55%.
         </p>
         <Image src="/anh3.jpg" alt="main" height="600" width="800" className="aspect-video object-cover my-4"/>
-        <span className="text-sm mt-2 mb-6 text-neutral-400 font-semibold max-w-[60%] text-center">Hình ảnh minh hoạ. Tỷ lệ sinh viên gặp các vấn đề căng thẳng, lo âu và trầm cảm theo nghiên cứu tại Đại học Huế.</span>
-        <p>
+        <span className="text-sm mt-2 text-neutral-600 italic">Hình ảnh minh hoạ. Tỷ lệ sinh viên gặp các vấn đề căng thẳng, lo âu và trầm cảm theo nghiên cứu tại Đại học Huế.</span>
+        <p className="mt-4">
           Tình trạng mất ngủ cũng đang trở nên phổ biến trong giới sinh viên. Một khảo sát tại Trường Đại học Y Dược TP.HCM cho thấy, 52,8% sinh viên y khoa bị mất ngủ và 70,9% ngủ ít hơn 7 tiếng mỗi ngày. Thiếu ngủ kéo dài không chỉ ảnh hưởng đến khả năng tập trung và hiệu suất học tập mà còn làm gia tăng nguy cơ mắc các bệnh lý về tim mạch, tiêu hóa và rối loạn tâm thần.
           <br/>
           <br/>
@@ -153,7 +154,7 @@ export default function Home() {
           Trao đổi với nhóm báo, thầy Trần Hồng Phong - giảng viên tại Học viện Ngoại giao - cho biết, tình trạng mệt mỏi, thiếu sức sống thường bắt đầu xuất hiện ở sinh viên vào nửa sau của học kỳ, khi các kỳ thi và sự kiện trong Học viện diễn ra dày đặc. Trong giai đoạn này, sinh viên cần biết ưu tiên những công việc quan trọng, cân nhắc giảm bớt việc làm thêm và một số hoạt động câu lạc bộ để dành thời gian nghỉ ngơi, đảm bảo sức khỏe.
         </p>
         <Image src="/teacher.jpg" alt="main" height="600" width="800" className="aspect-video object-cover my-4"/>
-        <span className="text-sm mt-2 text-neutral-400 font-semibold max-w-[60%] text-center">Thầy Trần Hồng Phong - giảng viên Học viện Ngoại giao chia sẻ cùng nhóm phóng viên (Ảnh: Quỳnh Anh)</span>
+        <span className="text-sm mt-2 text-neutral-600 italic">Thầy Trần Hồng Phong - giảng viên Học viện Ngoại giao chia sẻ cùng nhóm phóng viên (Ảnh: Quỳnh Anh)</span>
         <p className="mb-10 mt-6">
           Theo thầy Phong: “Áp lực là điều không thể tránh khỏi, dù còn ngồi trên ghế nhà trường hay sau này bước ra ngoài xã hội. Việc sinh viên cần làm là học cách cân bằng.” Thức khuya, bỏ bữa để chạy deadline, ôn thi hay làm thêm có thể mang lại hiệu quả trong ngắn hạn, nhưng về lâu dài, sự đánh đổi sức khỏe này sẽ có thể trở thành gánh nặng cho gia đình.  
           <br/>
@@ -166,9 +167,6 @@ export default function Home() {
           <br/>
           Lựa chọn sống “đa nhiệm” không sai, nhưng khi nó cuốn sinh viên vào một cuộc đua không có điểm dừng, thì mệt mỏi và kiệt sức là điều tất yếu. Việc học cách lùi lại, thiết lập giới hạn và chăm sóc sức khỏe tinh thần không chỉ là lựa chọn cá nhân, mà là cách để thế hệ trẻ duy trì nội lực bền vững trên hành trình trưởng thành.
         </p>
-        <iframe width="1000" height="632" className="mb-10"
-          src="https://www.youtube.com/embed/aZSrO6llVJw">
-        </iframe>
       </main>
     </div>
   );
